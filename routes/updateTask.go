@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/roychowdhuryrohit-dev/SampleJobManager/signals"
+	"github.com/roychowdhuryrohit-dev/BackgroundJobManager/signals"
 
 	"github.com/gin-gonic/gin"
 )

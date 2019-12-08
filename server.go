@@ -10,9 +10,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/roychowdhuryrohit-dev/SampleJobManager/config"
-	"github.com/roychowdhuryrohit-dev/SampleJobManager/routes"
-	"github.com/roychowdhuryrohit-dev/SampleJobManager/signals"
+	"github.com/roychowdhuryrohit-dev/BackgroundJobManager/config"
+	"github.com/roychowdhuryrohit-dev/BackgroundJobManager/routes"
+	"github.com/roychowdhuryrohit-dev/BackgroundJobManager/signals"
 )
 
 func main() {
