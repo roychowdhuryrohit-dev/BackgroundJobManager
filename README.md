@@ -37,12 +37,14 @@ Make sure environment variables are set in file *.env* present in parent folder.
 ## API doc
 
  - *POST /uploadCSV -F file=@/path/file.csv*
+
     Response:
 	*{"Job ID":"Jon-Doe-baselineCSV-1575836394-8469"}*
 	
 	Uploads and processes each row of file. 
 	
  - *POST /createBulkTeam -F file=@/path/file.csv*
+
     Response:
 	*{"Job ID":"Jon-Doe-bulkTeam-1575836394-8469"}*
 	
@@ -52,7 +54,8 @@ Make sure environment variables are set in file *.env* present in parent folder.
 	"from":"2018-07-01",
 	"to":"2018-08-01"
 	}'*
-	 Response:
+	
+	Response:
 	*{"Job ID":"Jon-Doe-createExport-1575836394-8469"}*
 	
 	Exports data for each date row.
