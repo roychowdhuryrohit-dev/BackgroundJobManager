@@ -54,7 +54,7 @@ Make sure environment variables are set in file *.env* present in parent folder.
 	"from":"2018-07-01",
 	"to":"2018-08-01"
 	}'*
-	
+
 	Response:
 	*{"Job ID":"Jon-Doe-createExport-1575836394-8469"}*
 	
@@ -74,5 +74,5 @@ Make sure environment variables are set in file *.env* present in parent folder.
 
 ## Future Work
 
- - Currently workers do not survive server restarts. This will require saving the state of the worker in a persistent storage or an in-memory database like Redis. This will be easy to implement now as the server shutdowns due to SIGINT, SIGTERM gracefully, where workers can save states and exit. 
+ - Currently workers do not survive server restarts. This will require saving the state of the worker in a persistent storage or an in-memory database like Redis. This will be easy to implement now as the server shutdowns due to SIGINT, SIGTERM gracefully, when workers can save states and exit. 
  For fault-tolerance, regular backup of state will be required, thus consuming extra resources.
