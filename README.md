@@ -57,15 +57,15 @@ Make sure environment variables are set in file *.env* present in parent folder.
 	
 	Exports data for each date row.
 	
- - GET /updateTask?id=Jon-Doe-bulkTeam-1575829098-7618&action=start
+ - GET */updateTask?id=Jon-Doe-bulkTeam-1575829098-7618&action=start*
 	
 	Resumes background worker of that id.
 	
- - GET /updateTask?id=Jon-Doe-bulkTeam-1575829098-7618&action=stop
+ - GET */updateTask?id=Jon-Doe-bulkTeam-1575829098-7618&action=stop*
    
     Pauses background worker until it gets resumed or terminated.
    
- - GET /updateTask?id=Jon-Doe-bulkTeam-1575829098-7618&action=terminate
+ - GET */updateTask?id=Jon-Doe-bulkTeam-1575829098-7618&action=terminate*
 
 	Terminates background worker.
 
