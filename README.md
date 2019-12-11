@@ -32,11 +32,11 @@ This will ensure that the resources like compute/memory/storage/time are used ef
  
 	 `make run_docker`
 
-Make sure environment variables are set in file *.env* present in parent folder.
+Make sure environment variables are set in file *.env* present in project root folder.
 
 ## API doc
 
- - *POST /uploadCSV -F file=@/path/file.csv*
+ - `POST /uploadCSV -F file=@/path/file.csv*
 
     Response:
 	*{"Job ID":"Jon-Doe-baselineCSV-1575836394-8469"}*
