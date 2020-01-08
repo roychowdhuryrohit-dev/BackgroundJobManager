@@ -36,7 +36,7 @@ Make sure environment variables are set in file *.env* present in project root f
 
 ## API doc
 
- - `POST /uploadCSV -F file=@/path/file.csv*
+ - *POST /uploadCSV -F file=@/path/file.csv*
 
     Response:
 	*{"Job ID":"Jon-Doe-baselineCSV-1575836394-8469"}*
