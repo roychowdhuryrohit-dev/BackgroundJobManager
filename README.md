@@ -8,7 +8,7 @@ This will ensure that the resources like compute/memory/storage/time are used ef
 
  - Background workers are implemented by *goroutines* which are very lightweight and do not consume much resources. These threads are different from OS threads and are multiplexed by the Go scheduler.
  
- - Uses sync.Map which scales [better](https://weekly-geekly.github.io/articles/338718/index.html) than lock-based technique to achieve thread safety, especially in a large multi-core **">4 "** system *[in certain scenarios](https://golang.org/pkg/sync/#Map)*.
+ - Uses sync.Map which scales [better](https://5f9ff94d746d8.htmlsave.net/) than lock-based technique to achieve thread safety, especially in a large multi-core **">4 "** system *[in certain scenarios](https://golang.org/pkg/sync/#Map)*.
  
  - Each worker during "pause", consumes very little resource both in CPU time and memory. This is because :
 	 - Go scheduler doesn't schedule a goroutine until data is received in channel. Channel operations tell the scheduler to schedule another goroutine, that’s why a         program doesn’t block forever on the same goroutine. This performs better than other techniques like long-polling(loop).
